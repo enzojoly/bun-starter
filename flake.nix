@@ -13,7 +13,12 @@
     {
       devShells = forAllSystems ({ pkgs }: {
         default = pkgs.mkShell {
-          packages = [ pkgs.bun ];
+          packages = with pkgs; [
+                bun
+#Add more pkgs->
+#Add more pkgs->
+#Add more pkgs->
+            ];
         };
       });
     };
