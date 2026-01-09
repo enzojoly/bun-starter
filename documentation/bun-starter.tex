@@ -213,13 +213,13 @@ Bun.serve({ port, fetch })
 
 \begin{lstlisting}[style=bash]
 nix develop           # enter environment
-bun --hot serve.ts    # run dev server at localhost:3000
+bun serve.ts    # run dev server at localhost:3000
 
                       # build production binary
 bun build --compile serve.ts --outfile=server
 \end{lstlisting}
 
-The \texttt{--hot} flag reloads on file changes. The compiled binary is self-contained and runs without Bun installed.
+The compiled binary is self-contained and runs without Bun installed.
 
 \section*{Concepts}
 
